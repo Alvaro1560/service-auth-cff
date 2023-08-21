@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: justify;
+        }
+        .text-brand {
+            color: #2888ee;
+        }
+        .font-bold {
+            font-weight: bold;
+        }
+        @media only screen and (min-width: 992px) {
+            .container {
+                width: 640px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0px; font-family: sans-serif; background: rgb(224, 224, 224)">
+    <div class="container" style="background: white">
+        <div class="header" style="padding: 24px">
+            <table>
+                <td style="width: 100%">
+                    <span style="font-weight: 900; color: #2888ee; font-size: 24px; line-height: 24px;">
+                        Recuperación de Cuenta
+                    </span>
+                </td>
+                <td>
+                    <img width="160px" src="https://lh3.googleusercontent.com/drive-viewer/AFGJ81rTCgiI-5xj6VE0XeQFGMKilrA1_o6c0QA_iHJHYq3gYR65cLmGbLQa9VAgrQYu8ukovobL0l8VYomG0Pk66uWmVWRJ=w1920-h960" alt="ECATCH">
+                </td>
+            </table>
+        </div>
+        <div class="body" style="padding: 0 24px 24px 24px">
+            <div>
+                <span style="font-weight: bold; color: rgb(46, 46, 46); font-size: 20px; line-height: 24px;">
+                    Estimado usuario:
+                </span>
+            </div>
+            <div style="margin: 12px 0; border-top: 1px solid #d9d9d9"></div>
+            <div style="color: rgb(46, 46, 46); font-size: 16px; line-height: 24px;">
+                <p>
+                    Está solicitando una recuperación de cuenta, para realizarlo ingrese al siguiente enlace:
+                </p>
+                <table>
+                    <tr>
+                        <td>
+                            <div style="width: 4px; height: 16px; background-color: #2888ee;"></div>
+                        </td>
+                        <td>
+                            <div>
+                                <span>Recuperar cuenta ECatch: </span><a href="{{ range $key, $value := . }}{{if eq $key "@token" }}{{ $value }}{{ end }}{{ end }}">Click aquí</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    En caso que usted no haya solicitado nada, puede ignorar este mensaje.
+                </p>
+                <p style="color:white">|</p>
+                <p>Cordialmente, </p>
+                <p style="font-weight: bold;">ECatch BPMN</p>
+            </div>
+        </div>
+        <div style="padding: 24px; background-color: #2888ee">
+            <table>
+                <tr>
+                    <td style="width: 100%;">
+                        <span style="color: white; font-size: 14px; line-height: 20px;">
+                            Este es un mensaje automatico del sistema, por favor, no responder a este correo.
+                        </span>
+                    </td>
+                    <td>
+                        <img width="120px" src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81rlCwop-igjjfeEjNYSJoGvkp-SbAT97aVaqM8Hr0PU9FBwlpPJnhtBtFzXL1Y3nVdLRHrnPpuRHYJ0AbWKsoJRGPMh6g=w984-h960" alt="ECAPTURE">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
